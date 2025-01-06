@@ -1,0 +1,19 @@
+#Finding Mean
+
+>Mean_Contamination_Salmon <- mean(Contamination_Salmon_Length$FISH_LENGTH, na.rm = TRUE)
+
+>Mean_Contamination_Trout <- mean(Contamination_Trout_Length$FISH_LENGTH, na.rm = TRUE)
+
+>Mean_Control_Salmon <- mean(Control_Salmon_Length$FISH_LENGTH, na.rm = TRUE)
+
+>Mean_Control_Trout <- mean(Control_Trout_Length$FISH_LENGTH, na.rm = TRUE)
+
+#Finding SD
+
+>SD_Contamination_Salmon <- sd(Contamination_Salmon_Length$FISH_LENGTH, na.rm = TRUE)
+
+>SD_Contamination_Trout <- sd(Contamination_Trout_Length$FISH_LENGTH, na.rm = TRUE)
+
+>SD_Control_Salmon <- sd(Control_Salmon_Length$FISH_LENGTH, na.rm = TRUE)
+
+>SD_Control_Trout <- sd(Control_Trout_Length$FISH_LENGTH, na.rm = TRUE)
