@@ -1,0 +1,13 @@
+# Filtering Data to correct species and age
+
+>Contamination_Salmon_Length <- Contamination %>%
+filter(SPECIES_ID == 118, AGE_BAND == '>0+')
+
+>Contamination_Trout_Length <- Contamination %>%
+filter(SPECIES_ID == 111, AGE_BAND == '>0+')
+
+>Control_Salmon_Length <- Control %>%
+filter(SPECIES_ID == 118, AGE_BAND == '>0+')
+
+>Control_Trout_Length <- Control %>%
+filter(SPECIES_ID == 111, AGE_BAND == '>0+')
