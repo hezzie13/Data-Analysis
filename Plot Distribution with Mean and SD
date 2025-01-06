@@ -1,0 +1,33 @@
+#Plot a Normal Distribution with vertical lines representing means and SDs
+
+> ggplot(Contamination_Salmon_Length, aes(x = FISH_LENGTH)) +
++ geom_density(fill = 'steelblue', alpha = 0.5) +
++ geom_vline(aes(xintercept = Mean_Contamination_Salmon), color = 'red', linetype = 'dashed', linewidth = 1) +
++ geom_vline(aes(xintercept = Mean_Contamination_Salmon + SD_Contamination_Salmon), color = 'green', linetype = 'dotted', linewidth = 1) +
++ geom_vline(aes(xintercept = Mean_Contamination_Salmon - SD_Contamination_Salmon), color = 'green', linetype = 'dotted', linewidth = 1) +
++ labs(title = "Normal Distribution for Contaminated Salmon Length", x = 'Length, mm', y = "Density") +
++ theme_minimal()
+
+> ggplot(Contamination_Trout_Length, aes(x = FISH_LENGTH)) +
++ geom_density(fill = 'steelblue', alpha = 0.5) +
++ geom_vline(aes(xintercept = Mean_Contamination_Trout), color = 'red', linetype = 'dashed', linewidth = 1) +
++ geom_vline(aes(xintercept = Mean_Contamination_Trout + SD_Contamination_Trout), color = 'green', linetype = 'dotted', linewidth = 1) +
++ geom_vline(aes(xintercept = Mean_Contamination_Trout - SD_Contamination_Trout), color = 'green', linetype = 'dotted', linewidth = 1) +
++ labs(title = "Normal Distribution for Contaminated Trout Length", x = 'Length, mm', y = "Density") +
++ theme_minimal()
+
+> ggplot(Control_Salmon_Length, aes(x = FISH_LENGTH)) +
++ geom_density(fill = 'steelblue', alpha = 0.5) +
++ geom_vline(aes(xintercept = Mean_Control_Salmon), color = 'red', linetype = 'dashed', linewidth = 1) +
++ geom_vline(aes(xintercept = Mean_Control_Salmon + SD_Control_Salmon), color = 'green', linetype = 'dotted', linewidth = 1) +
++ geom_vline(aes(xintercept = Mean_Control_Salmon - SD_Control_Salmon), color = 'green', linetype = 'dotted', linewidth = 1) +
++ labs(title = "Normal Distribution for Control Salmon Length", x = 'Length, mm', y = "Density") +
++ theme_minimal()
+
+> ggplot(Control_Trout_Length, aes(x = FISH_LENGTH)) +
++ geom_density(fill = 'steelblue', alpha = 0.5) +
++ geom_vline(aes(xintercept = Mean_Control_Trout), color = 'red', linetype = 'dashed', linewidth = 1) +
++ geom_vline(aes(xintercept = Mean_Control_Trout + SD_Control_Trout), color = 'green', linetype = 'dotted', linewidth = 1) +
++ geom_vline(aes(xintercept = Mean_Control_Trout - SD_Control_Trout), color = 'green', linetype = 'dotted', linewidth = 1) +
++ labs(title = "Normal Distribution for Control Trout Length", x = 'Length, mm', y = "Density") +
++ theme_minimal()
